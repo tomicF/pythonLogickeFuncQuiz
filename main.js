@@ -65,7 +65,7 @@ function provjeriOdgovorN(){
 }
 
 function kraj(){
-    alert("Quiz finished! You got " + good_answers + " out of 10 correct.");
+    alert("Quiz zavrsen! Dobio/la si " + good_answers + " od  10 tacnih odgovora.");
     document.getElementById("tacno").disabled = true;
     document.getElementById("ne-tacno").disabled = true;
     document.getElementById("nextButton").disabled = true;
