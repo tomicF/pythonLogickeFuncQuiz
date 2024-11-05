@@ -1,19 +1,20 @@
 let iterator = -1;
 let good_answers = 0;
 
-
 const questions = [
-    "Da li je izraz True and False jednak True ili False?",
-    "Šta će biti rezultat izraza False or True?",
-    "Da li je izraz not True jednak True ili False?",
-    "Šta će biti rezultat izraza True or False and False?",
-    "Da li je izraz not (False or True) jednak True ili False?",
-    "Šta će biti rezultat izraza True and True or False?",
-    "Da li je izraz not (True and False) jednak True ili False?",
-    "Šta će biti rezultat izraza False and (not True)?",
-    "Da li je izraz not (not False) jednak True ili False?",
-    "Šta će biti rezultat izraza True and (True or False)?"
+    "Da li je izraz <span class='keyword-true'>TRUE</span> <span class='keyword-and'>and</span> <span class='keyword-false'>FALSE</span> jednak <span class='keyword-true'>TRUE</span> ili <span class='keyword-false'>FALSE</span>?",
+    "Šta će biti rezultat izraza <span class='keyword-false'>FALSE</span> <span class='keyword-or'>or</span> <span class='keyword-true'>TRUE</span>?",
+    "Da li je izraz <span class='keyword-not'>not</span> <span class='keyword-true'>TRUE</span> jednak <span class='keyword-true'>TRUE</span> ili <span class='keyword-false'>FALSE</span>?",
+    "Šta će biti rezultat izraza <span class='keyword-true'>TRUE</span> <span class='keyword-or'>or</span> <span class='keyword-false'>FALSE</span> <span class='keyword-and'>and</span> <span class='keyword-false'>FALSE</span>?",
+    "Da li je izraz <span class='keyword-not'>not</span> (<span class='keyword-false'>FALSE</span> <span class='keyword-or'>or</span> <span class='keyword-true'>TRUE</span>) jednak <span class='keyword-true'>TRUE</span> ili <span class='keyword-false'>FALSE</span>?",
+    "Šta će biti rezultat izraza <span class='keyword-true'>TRUE</span> <span class='keyword-and'>and</span> <span class='keyword-true'>TRUE</span> <span class='keyword-or'>or</span> <span class='keyword-false'>FALSE</span>?",
+    "Da li je izraz <span class='keyword-not'>not</span> (<span class='keyword-true'>TRUE</span> <span class='keyword-and'>and</span> <span class='keyword-false'>FALSE</span>) jednak <span class='keyword-true'>TRUE</span> ili <span class='keyword-false'>FALSE</span>?",
+    "Šta će biti rezultat izraza <span class='keyword-false'>FALSE</span> <span class='keyword-and'>and</span> (<span class='keyword-not'>not</span> <span class='keyword-true'>TRUE</span>)?",
+    "Da li je izraz <span class='keyword-not'>not</span> (<span class='keyword-not'>not</span> <span class='keyword-false'>FALSE</span>) jednak <span class='keyword-true'>TRUE</span> ili <span class='keyword-false'>FALSE</span>?",
+    "Šta će biti rezultat izraza <span class='keyword-true'>TRUE</span> <span class='keyword-and'>and</span> (<span class='keyword-true'>TRUE</span> <span class='keyword-or'>or</span> <span class='keyword-false'>FALSE</span>)?"
 ];
+
+
 
 const answers = [
     false,  // Odgovor na prvo pitanje
